@@ -1,0 +1,129 @@
+@font-face{
+   font-family: Schoolbell;
+   src: url(../fonts/Schoolbell-Regular.ttf) format('truetype');
+}
+img{
+    max-width: 100%;
+}
+body{
+    font-family: Schoolbell;
+    align-content: center;
+}
+#fondonevera{
+    width: 960px;
+    height: 700px;
+    background-image: url("../img/nevera1.jpg");
+    background-position:-20px 0px;
+    margin: auto;
+    
+}
+#contenedor{
+    display:flex;
+    flex-direction: column;
+    font-family:Schoolbell;
+    align-content: center;
+    width:400px;
+    margin:auto;
+}
+#cabeza{
+    width:100%;
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+/*            border:1px solid black;*/
+}
+#editEntrada{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 1px solid black;
+}
+#editItem{
+    width: 68%;
+    font-family:Schoolbell;
+    font-size:1.3em;
+    font-weight: bold;
+
+}
+#botonAnyadir{
+    flex:1;
+    color: white;
+    background-color:darkslategray;
+    font-size: 1.5em;
+    line-height: 30px;
+    margin:7px;
+    text-align: center;
+    border: 5px solid green;
+    border-radius: 10px; 
+    cursor:pointer;
+}
+#listaItems{
+    display: flex;
+    flex-direction: column;
+    height: 475px;
+    border: 1px solid green;
+    overflow-y:auto;
+}
+.unItem{
+    display:flex;
+    flex-direction: row;
+    border: 1px solid green;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.nombreItem{
+    width: 90%;
+    text-align: left;
+    line-height: 35px;
+    font-size: 1.3em;
+    font-weight: bold;
+/*            border: 1px solid green;*/
+}
+.seleccionado{
+    display:flex;
+    width:10%;
+    line-height: 30px;
+/*            text-align: center;*/
+/*            border: 1px solid green;*/
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+#botonSelAll{
+    width:80%;
+    color:white;
+    background-color:darkslategray;
+    font-size: 1.5em;
+    line-height: 30px;
+    margin:7px;
+    border: 5px solid green;
+    text-align: center;
+    border-radius: 10px;
+    margin:auto;
+    cursor:pointer;
+}
+#botonBorrarSel{
+    width:80%;
+    color:white;
+    background-color:darkslategray;
+    font-size: 1.5em;
+    line-height: 30px;
+    margin:7px;
+    border: 5px solid green;
+    text-align: center;
+    border-radius: 10px;
+    margin:auto;
+    cursor:pointer;
+}
+.dummySpace{
+    width:80%;
+    height: 10px;
+    margin:auto;
+}
+@media only screen and (max-width: 900px){
+    #fondonevera{
+        width: 600px;
+        background-position:-200px 0px;
+    }
+    
+}
